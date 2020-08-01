@@ -23,11 +23,11 @@
                      <children>
                          <TreeItem value="Proveedores" fx:id="proveedoresItem"></TreeItem>
                          <TreeItem value="Presentaciones" fx:id="presentacionesItem"></TreeItem>
-                         <TreeItem value="Dolencias" fx:id="dolenciasItem"></TreeItem>
+                         <TreeItem value="Descripcion" fx:id="dolenciasItem"></TreeItem>
                          <TreeItem value="Empleados" fx:id="empleadosItem"></TreeItem>
                          <TreeItem value="Tipo de Pago" fx:id="tipoPagoItem"></TreeItem>
                          <TreeItem value="Clientes" fx:id="clientesItem"></TreeItem>
-                         <TreeItem value="Colocaciones" fx:id="colocacionesItem"></TreeItem>
+                         <TreeItem value="Marcas" fx:id="colocacionesItem"></TreeItem>
                          <TreeItem value="Usuarios" fx:id="usuariosItem"></TreeItem>
                          <TreeItem value="Niveles de Usuario" fx:id="nivelesItem"></TreeItem>
                          <TreeItem value="Permisos" fx:id="permisosItem"></TreeItem>

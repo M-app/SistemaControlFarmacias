@@ -49,7 +49,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
          <children>
-            <Label text="Dolencia">
+            <Label text="Descripción">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

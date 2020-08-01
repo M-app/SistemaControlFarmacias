@@ -58,7 +58,7 @@
                   <Insets right="20.0" />
                </HBox.margin>
             </Label>
-            <Label fx:id="lblRegistros" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="84.0" text="Dolencias">
+            <Label fx:id="lblRegistros" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="84.0" text="Descripción">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>

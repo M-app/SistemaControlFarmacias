@@ -10,6 +10,8 @@ import resumen.ventas.model.VentaDiaReporte;
 import ventas.model.DetalleOPedidoReporte;
 
 import java.io.File;
+import java.io.InputStream;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,13 +25,16 @@ import java.util.Map;
 public class Reporte {
 
     private final String rut = System.getProperty("user.home") + File.separator + "Reportes" + File.separator + "plantilla" +
-            File.separator + "FacturaFarmacia.jasper";
+            File.separator + "FacturaFarmacia.jrxml";
 
     private final String rutCompras = System.getProperty("user.home") + File.separator + "Reportes" + File.separator + "plantilla" +
             File.separator + "ReporteCompra.jasper";
 
     private final String rutVentaDia = System.getProperty("user.home") + File.separator + "Reportes" + File.separator + "plantilla" +
             File.separator + "reporteCierreDia.jasper";
+
+    private final String rutLogo = System.getProperty("user.home") + File.separator + "Reportes" + File.separator + "plantilla" +
+            File.separator + "logo.jpg";
 
     //private final String rutCierre = System.getProperty("user.home") + File.separator + "Reportes" + File.separator + "plantilla" +
       //      File.separator + "CierreDia.jasper";
@@ -40,18 +45,22 @@ public class Reporte {
     Map<String,Object> parametros = new HashMap<>();
 
     public void pdfReporte(List<ProductoReporte> list, String nomCliente, String nitCliente, String direccion,
-                           String telCliente, String noFactura, boolean imprimir, boolean guardar,String subTotal,
+                           String telCliente, String nomEmpleado , String noFactura, boolean imprimir, boolean guardar, String subTotal,
                            String descuento, String total){
         parametros.put("nomCliente",nomCliente);
         parametros.put("nitCliente",nitCliente);
         parametros.put("direccion",direccion);
         parametros.put("telCliente",telCliente);
+        parametros.put("nomEmpleado", nomEmpleado);
         parametros.put("noFactura",noFactura);
         parametros.put("subtotal",subTotal);
         parametros.put("descuento",descuento);
         parametros.put("total",total);
+        InputStream reporte = null;
         try {
-            JasperPrint jPrint = JasperFillManager.fillReport(rut, parametros,
+            reporte = getClass().getResourceAsStream("/reportes/FacturaFarmacia.jrxml");
+            JasperReport report = JasperCompileManager.compileReport(reporte);
+            JasperPrint jPrint = JasperFillManager.fillReport(report, parametros,
                     new JRBeanCollectionDataSource(list));
             if(imprimir){
                 JasperPrintManager.printReport(jPrint, false);

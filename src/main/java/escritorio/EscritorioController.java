@@ -248,7 +248,8 @@ public class EscritorioController implements Initializable {
                 rootEscritorio.setCenter(rootPresentaciones);
                 break;
 
-            case "Dolencias":
+            case "Descripcion":
+                System.out.println("click");
                 AnchorPane rootDolencias = (AnchorPane) Util.getWindow(
                         "dolencias/operaciones_dolencias.fxml",
                         getClass()
@@ -296,7 +297,7 @@ public class EscritorioController implements Initializable {
                 //Util.loadWindow("pos/ventas.fxml","Punto de venta",getClass());
                 abrirPuntoVenta();
                 break;
-            case "Colocaciones":
+            case "Marcas":
                 AnchorPane rootColocaciones = (AnchorPane) Util.getWindow(
                         "colocaciones/operaciones_colocaciones.fxml",
                         getClass()

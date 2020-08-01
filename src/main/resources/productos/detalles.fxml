@@ -175,7 +175,7 @@
             </HBox>
             <HBox layoutX="30.0" layoutY="422.0" prefWidth="200.0">
                <children>
-                  <Label minHeight="-Infinity" minWidth="-Infinity" text="Dolencia">
+                  <Label minHeight="-Infinity" minWidth="-Infinity" text="Descripcion">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -195,7 +195,7 @@
             </HBox>
             <HBox layoutX="30.0" layoutY="444.0" prefWidth="200.0">
                <children>
-                  <Label minHeight="-Infinity" minWidth="-Infinity" text="Colocación">
+                  <Label minHeight="-Infinity" minWidth="-Infinity" text="Marca">
                      <font>
                         <Font size="16.0" />
                      </font>

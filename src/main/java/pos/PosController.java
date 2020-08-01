@@ -31,6 +31,8 @@ import pos.model.*;
 import reportes.Reporte;
 import sesion.Sesion;
 
+import javax.imageio.ImageIO;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -137,6 +139,9 @@ public class PosController implements Initializable{
 
     public static ArrayList<Integer> listaCodigos = new ArrayList<>();
 
+    private final String rutLogo = System.getProperty("user.home") + File.separator + "Reportes" + File.separator + "plantilla" +
+            File.separator + "logo.jpg";
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         matchDataWithTable();
@@ -214,11 +219,13 @@ public class PosController implements Initializable{
                     String.valueOf(listaCompras.get(i).getSubtotal())));
         }
         Reporte reporte = new Reporte();
-        reporte.pdfReporte(listaReporte,comboCliente.getSelectionModel().getSelectedItem().getNombre() +
+        reporte.pdfReporte(listaReporte,
+                comboCliente.getSelectionModel().getSelectedItem().getNombre() +
                 " " + comboCliente.getSelectionModel().getSelectedItem().getApellidos(),
                 comboCliente.getSelectionModel().getSelectedItem().getNit(),
                 comboCliente.getSelectionModel().getSelectedItem().getDireccion(),
                 String.valueOf(comboCliente.getSelectionModel().getSelectedItem().getCelular()),
+                txtEmpleado.getText(),
                 String.valueOf(lblNoOrden.getText()),checkImprimir.isSelected(),checkGuardar.isSelected(),
                 lblSubTotal.getText(),txtDescuento.getText(),lblTotal.getText());
     }

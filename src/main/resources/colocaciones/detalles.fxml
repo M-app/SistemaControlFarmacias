@@ -23,7 +23,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label minHeight="-Infinity" minWidth="-Infinity" text="Colocaciones">
+            <Label minHeight="-Infinity" minWidth="-Infinity" text="Marcas">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>

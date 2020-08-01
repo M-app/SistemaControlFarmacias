@@ -29,7 +29,7 @@ public class Conexion {
             //System.setProperty("javax.net.ssl.keyStorePassword", "rock55241795");
             //System.setProperty("javax.net.ssl.trustStore", "truststore");
             //System.setProperty("javax.net.ssl.trustStorePassword", "rock55241795");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/farmacia", "admin", "admin");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/farmacia", "root", "");
             //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/farmacia?autoReconnect=true&useSSL=true","admin","admin");
             //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/farmacia?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","admin","admin");
             //conn = DriverManager.getConnection("jdbc:mysql://138.68.16.145:3306/farmacia","admin","admin");
