@@ -234,6 +234,7 @@ public class PosController implements Initializable{
         if(!venderDAO.AgregarModificarOrderPedido(crearOrden(),"new")){
             for(int i = 0; i < listaCompras.size(); i++){
                 ProductosListaCompras plc = listaCompras.get(i);
+                System.out.println("Precio enviado 1: " + plc.getPrecio());
                 venderDAO.AgregarModificarDetalleOrderPedido(plc,crearOrden(),"new");
                 if(listaCompras.get(i).getDescuento() > 0){
                     venderDAO.descuentoPorProducto(venderDAO.getUltimoIdDetalle(),listaCompras.get(i).getDescuento());

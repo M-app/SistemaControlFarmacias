@@ -78,19 +78,23 @@ public class Reporte {
     }
 
     public void reporteModificacionVenta(List<ProductoReporte> list, String nomCliente, String nitCliente, String direccion,
-                           String telCliente, String noFactura, boolean imprimir, boolean guardar,String subTotal,
+                           String telCliente,String nomEmpleado, String noFactura, boolean imprimir, boolean guardar,String subTotal,
                            String descuento, String total,String idVenta){
         parametros.clear();
         parametros.put("nomCliente",nomCliente);
         parametros.put("nitCliente",nitCliente);
         parametros.put("direccion",direccion);
         parametros.put("telCliente",telCliente);
+        parametros.put("nomEmpleado", nomEmpleado);
         parametros.put("noFactura",noFactura);
         parametros.put("subtotal",subTotal);
         parametros.put("descuento",descuento);
         parametros.put("total",total);
+        InputStream reporte = null;
         try {
-            JasperPrint jPrint = JasperFillManager.fillReport(rut, parametros,
+            reporte = getClass().getResourceAsStream("/reportes/FacturaFarmacia.jrxml");
+            JasperReport report = JasperCompileManager.compileReport(reporte);
+            JasperPrint jPrint = JasperFillManager.fillReport(report, parametros,
                     new JRBeanCollectionDataSource(list));
             if(imprimir){
                 JasperPrintManager.printReport(jPrint, false);

@@ -30,16 +30,21 @@ public class VenderDAO {
         }
     }
 
+    /**
+     * es llamado por el método vender en Pos Controller
+     */
     public boolean AgregarModificarDetalleOrderPedido(ProductosListaCompras plc,OrdenPedido op, String accion){
         Connection conn = Conexion.getInstance().getConexion();
-        final String procedimiento = "{ call procesoDetalleOrden(?,?,?,?,?)}";
+        final String procedimiento = "{ call procesoDetalleOrden(?,?,?,?,?,?)}";
         try {
             CallableStatement cs = conn.prepareCall(procedimiento);
             cs.setInt("idpedido",0);
             cs.setInt("idorden",op.getIdOrdenPedido());
             cs.setInt("idpro",plc.getCodigo());
-            cs.setInt("_cantidad",plc.getCantidad());
+            cs.setInt("cant",plc.getCantidad());
             cs.setString("accion",accion);
+            System.out.println("Precio Recibido: " + plc.getPrecio());
+            cs.setFloat("precio",plc.getPrecio());
             return cs.execute();
         } catch (SQLException e) {
             final String mensaje = "Error en la tabla Detalle Orden Pedido";
@@ -51,14 +56,16 @@ public class VenderDAO {
 
     public boolean AgregarModificarDetalleOrderPedido(DetalleOPedido dop,OrdenPedido op, String accion){
         Connection conn = Conexion.getInstance().getConexion();
-        final String procedimiento = "{ call procesoDetalleOrden(?,?,?,?,?)}";
+        final String procedimiento = "{ call procesoDetalleOrden(?,?,?,?,?,?)}";
         try {
             CallableStatement cs = conn.prepareCall(procedimiento);
             cs.setInt("idpedido",0);
             cs.setInt("idorden",op.getIdOrdenPedido());
             cs.setInt("idpro",dop.getIdProducto());
-            cs.setInt("_cantidad",dop.getCantidad());
+            cs.setInt("cant",dop.getCantidad());
             cs.setString("accion",accion);
+            System.out.println("Precio Recibido: " + dop.getPrecioVenta());
+            cs.setFloat("precio", dop.getPrecioVenta());
             return cs.execute();
         } catch (SQLException e) {
             final String mensaje = "Error en la tabla Detalle Orden Pedido";
@@ -91,7 +98,7 @@ public class VenderDAO {
             cs.setInt("idpedido",dop.getNumDetalle());
             cs.setInt("idorden",idOrden);
             cs.setInt("idpro",dop.getIdProducto());
-            cs.setInt("_cantidad",dop.getCantidad());
+            cs.setInt("cant",dop.getCantidad());
             cs.setString("accion","actualizar");
             return cs.execute();
         } catch (SQLException e) {

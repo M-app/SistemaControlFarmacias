@@ -6,6 +6,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.GridPane;
+import pos.PosController;
+import pos.model.ProductosListaCompras;
 import productos.model.ProductosDAO;
 import ventas.model.DetalleOPedido;
 
@@ -24,7 +26,7 @@ public class CeldaVentasController implements Initializable, PasarDopedido{
     private Label txtNombre;
 
     @FXML
-    private Label txtPrecio;
+    private TextField txtPrecio;
 
     @FXML
     private TextField txtCantidad;
@@ -41,6 +43,26 @@ public class CeldaVentasController implements Initializable, PasarDopedido{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        txtPrecio.setOnKeyPressed((event -> {
+            if(event.getCode() == KeyCode.ENTER){
+                if(validarPrecio(txtPrecio.getText())) {
+                    for (int i = 0; i < VentasController.listaDetalles.size(); i++) {
+                        DetalleOPedido dop = VentasController.listaDetalles.get(i);
+                        if (dop.getNumDetalle() == mDetalle.getNumDetalle()) {
+                            mDetalle.setPrecioVenta(Float.parseFloat(txtPrecio.getText()));
+                            float aux = mDetalle.getPrecioVenta() * mDetalle.getCantidad();
+                            float subTotal = aux - (aux * (mDetalle.getDescuento() / 100));
+                            mDetalle.setImporte(getDosDecimales(subTotal));
+                            VentasController.listaDetalles.set(i,mDetalle);
+                            break;
+                        }
+                    }
+                }
+            }
+        }));
+
+
         txtCantidad.setOnKeyPressed((event -> {
             if(event.getCode() == KeyCode.ENTER){
                 if(validarCantidad(txtCantidad.getText())) {
@@ -112,6 +134,23 @@ public class CeldaVentasController implements Initializable, PasarDopedido{
             }
         }else{
             txtCantidad.setText("1");
+        }
+        return false;
+    }
+
+    private boolean validarPrecio(String numero){
+        if(!numero.isEmpty()){
+            if(!numero.matches("\\d+.?\\d*")){
+                txtPrecio.setText(numero.replaceAll(".",""));
+            }else{
+                if(Float.parseFloat(numero) < 0f){
+                    txtPrecio.setText("0");
+                }else{
+                    return true;
+                }
+            }
+        }else{
+            txtPrecio.setText("0.0");
         }
         return false;
     }

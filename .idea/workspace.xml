@@ -25,46 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f5873ff-2a9a-471e-8d26-b56bdbab16b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/TrayNotification.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_41_bin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/io.xina.pos_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/io.xina.pos_main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/io.xina.pos_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/io.xina.pos_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/bd/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/bd/Conexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/clientes/ClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/clientes/ClientesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/clientes/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/clientes/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/colocaciones/ColocacionesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/colocaciones/ColocacionesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/colocaciones/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/colocaciones/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/compras/ComprasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/compras/ComprasController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/compras/IngresoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/compras/IngresoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/compras/ModificarCompraController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/compras/ModificarCompraController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/devoluciones/DevolucionesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/devoluciones/DevolucionesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/dolencias/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/dolencias/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/dolencias/DolenciasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/dolencias/DolenciasController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/empleados/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/empleados/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/empleados/EmpleadosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/empleados/EmpleadosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/escritorio/EscritorioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/escritorio/EscritorioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/nivelesusuario/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/nivelesusuario/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/nivelesusuario/NivelUsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/nivelesusuario/NivelUsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pago/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pago/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pago/PagoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pago/PagoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/CeldaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/CeldaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$3$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$4.class" afterDir="false" />
@@ -75,68 +46,18 @@
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/presentaciones/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/presentaciones/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/presentaciones/PresentacionesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/presentaciones/PresentacionesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/productos/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/productos/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/productos/ProductosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/productos/ProductosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/proveedores/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/proveedores/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/proveedores/ProveedoresController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/proveedores/ProveedoresController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/reportes/Reporte.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/reportes/Reporte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/usuarios/CambiarClaveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/usuarios/CambiarClaveController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/usuarios/DetalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/usuarios/DetalleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/usuarios/UsuariosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/usuarios/UsuariosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/ventas/anulacion/AnulacionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/ventas/anulacion/AnulacionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/TrayNotification.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/castor-xml-1.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/commons-beanutils-1.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/commons-collections-3.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/commons-digester-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/commons-javaflow.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/controlsfx-8.20.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/core-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/ecj-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/groovy-all-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/io.xina.pos-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/io.xina.pos-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/itext-2.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jackson-annotations-2.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jackson-core-2.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jackson-databind-2.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jasperreports-6.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jasperreports-fonts-6.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jasperreports-javaflow-6.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jcommon-1.0.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/jfreechart-1.0.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/lucene-analyzers-common-4.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/lucene-core-4.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/lucene-queryparser-4.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/mysql-connector-java-5.1.42-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/olap4j-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/xml-apis-1.3.02.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/colocaciones/detalles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/colocaciones/detalles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/colocaciones/operaciones_colocaciones.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/colocaciones/operaciones_colocaciones.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/dolencias/detalles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/dolencias/detalles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/dolencias/operaciones_dolencias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/dolencias/operaciones_dolencias.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/escritorio/escritorio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/escritorio/escritorio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pos/popup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pos/popup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/productos/detalles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/productos/detalles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/io_xina_pos_jar/io.xina.pos.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/io_xina_pos_main/io_xina_pos_main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/io_xina_pos_main/io_xina_pos_main.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/io_xina_pos_main/io_xina_pos_main.jnlp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bd/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/escritorio/EscritorioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/escritorio/EscritorioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/model/VenderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/model/VenderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/ventas/CeldaVentasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/ventas/CeldaVentasController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/pos/celda.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pos/celda.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/ventas/celda_ventas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/ventas/celda_ventas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pos/CeldaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pos/CeldaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pos/PosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pos/PosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pos/model/VenderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pos/model/VenderDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/reportes/Reporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reportes/Reporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/colocaciones/detalles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/colocaciones/detalles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/colocaciones/operaciones_colocaciones.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/colocaciones/operaciones_colocaciones.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dolencias/detalles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dolencias/detalles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dolencias/operaciones_dolencias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dolencias/operaciones_dolencias.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/escritorio/escritorio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/escritorio/escritorio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pos/popup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pos/popup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/productos/detalles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/productos/detalles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ventas/CeldaVentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ventas/CeldaVentasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ventas/VentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ventas/VentasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pos/celda.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pos/celda.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ventas/celda_ventas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ventas/celda_ventas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -703,7 +624,11 @@
       <workItem from="1596238004354" duration="470000" />
       <workItem from="1596238951063" duration="4797000" />
       <workItem from="1596288106532" duration="7965000" />
-      <workItem from="1596299639916" duration="3620000" />
+      <workItem from="1596299639916" duration="5338000" />
+      <workItem from="1596426168252" duration="2973000" />
+      <workItem from="1596513228208" duration="7286000" />
+      <workItem from="1596553213298" duration="4412000" />
+      <workItem from="1596599757751" duration="3164000" />
     </task>
     <servers />
   </component>
@@ -758,30 +683,30 @@
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596299549777" />
     <state x="1829" y="109" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1594990493271" />
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1595044612302" />
-    <state width="1323" height="90" key="GridCell.Tab.0.bottom" timestamp="1596307914403">
+    <state width="1323" height="208" key="GridCell.Tab.0.bottom" timestamp="1596603549379">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596307914403" />
-    <state width="1323" height="90" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596301265677" />
-    <state width="1323" height="272" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1596240605748" />
-    <state width="1323" height="90" key="GridCell.Tab.0.center" timestamp="1596307914403">
+    <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596603549379" />
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596518009269" />
+    <state width="1323" height="144" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1596558115481" />
+    <state width="1323" height="208" key="GridCell.Tab.0.center" timestamp="1596603549379">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596307914403" />
-    <state width="1323" height="90" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596301265676" />
-    <state width="1323" height="272" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1596240605748" />
-    <state width="1323" height="90" key="GridCell.Tab.0.left" timestamp="1596307914403">
+    <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596603549379" />
+    <state width="1323" height="149" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596518009269" />
+    <state width="1323" height="144" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1596558115480" />
+    <state width="1323" height="208" key="GridCell.Tab.0.left" timestamp="1596603549379">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596307914403" />
-    <state width="1323" height="90" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596301265676" />
-    <state width="1323" height="272" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1596240605747" />
-    <state width="1323" height="90" key="GridCell.Tab.0.right" timestamp="1596307914403">
+    <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596603549379" />
+    <state width="1323" height="149" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596518009269" />
+    <state width="1323" height="144" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1596558115480" />
+    <state width="1323" height="208" key="GridCell.Tab.0.right" timestamp="1596603549379">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="90" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596307914403" />
-    <state width="1323" height="90" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596301265676" />
-    <state width="1323" height="272" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1596240605748" />
+    <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596603549379" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596518009269" />
+    <state width="1323" height="144" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1596558115481" />
     <state width="1323" height="298" key="GridCell.Tab.1.bottom" timestamp="1594271893714">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>

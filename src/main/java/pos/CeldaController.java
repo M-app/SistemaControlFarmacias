@@ -23,7 +23,7 @@ public class CeldaController implements Initializable,PasarProductosListaCompra,
     private Label txtNombre;
 
     @FXML
-    private Label txtPrecio;
+    private TextField txtPrecio;
 
     @FXML
     private TextField txtCantidad;
@@ -98,6 +98,24 @@ public class CeldaController implements Initializable,PasarProductosListaCompra,
             }
         }));
 
+        txtPrecio.setOnKeyPressed((event -> {
+            if(event.getCode() == KeyCode.ENTER){
+                if (validarPrecio(txtPrecio.getText())) {
+                    for (int i = 0; i < PosController.listaCompras.size(); i++) {
+                        ProductosListaCompras plc = PosController.listaCompras.get(i);
+                        if (plc.getCodigo() == mPlc.getCodigo()) {
+                            plc.setPrecio(Float.parseFloat(txtPrecio.getText()));
+                            float aux = plc.getPrecio() * plc.getCantidad();
+                            float subTotal = aux - (aux * (plc.getDescuento() / 100));
+                            plc.setSubtotal(getDosDecimales(subTotal));
+                            PosController.listaCompras.set(i, plc);
+                            break;
+                        }
+                    }
+                }
+            }
+        }));
+
 
         txtCantidad.textProperty().addListener(((observable, oldValue, newValue )-> {
             if(newValue != null && !newValue.isEmpty()){
@@ -150,6 +168,22 @@ public class CeldaController implements Initializable,PasarProductosListaCompra,
             }
         }else{
             txtDescuento.setText("0.0");
+        }
+        return false;
+    }
+    private boolean validarPrecio(String numero){
+        if(!numero.isEmpty()){
+            if(!numero.matches("\\d+.?\\d*")){
+                txtPrecio.setText(numero.replaceAll(".",""));
+            }else{
+                if(Float.parseFloat(numero) < 0f){
+                    txtPrecio.setText("0");
+                }else{
+                    return true;
+                }
+            }
+        }else{
+            txtPrecio.setText("0.0");
         }
         return false;
     }

@@ -640,14 +640,15 @@ public class VentasController implements Initializable {
                     String.valueOf(listaDetalles.get(i).getImporte())));
         }
         Reporte reporte = new Reporte();
-        /*reporte.pdfReporte(listaReporte,
-                comboCliente.getSelectionModel().getSelectedItem().getNombre() +
-                        " " + comboCliente.getSelectionModel().getSelectedItem().getApellidos(),
-                comboCliente.getSelectionModel().getSelectedItem().getNit(),
-                comboCliente.getSelectionModel().getSelectedItem().getDireccion(),
-                String.valueOf(comboCliente.getSelectionModel().getSelectedItem().getCelular()),
-                String.valueOf(lblNoOrden.getText()),checkImprimir.isSelected(),checkGuardar.isSelected(),
-                lblSubTotal.getText(),txtDescuento.getText(),lblTotal.getText());*/
+//        reporte.pdfReporte(listaReporte,
+//                comboCliente.getSelectionModel().getSelectedItem().getNombre() +
+//                        " " + comboCliente.getSelectionModel().getSelectedItem().getApellidos(),
+//                comboCliente.getSelectionModel().getSelectedItem().getNit(),
+//                comboCliente.getSelectionModel().getSelectedItem().getDireccion(),
+//                String.valueOf(comboCliente.getSelectionModel().getSelectedItem().getCelular()),
+//                txtEmpleado.getText(),
+//                String.valueOf(lblNoOrden.getText()),checkImprimir.isSelected(),checkGuardar.isSelected(),
+//                lblSubTotal.getText(),txtDescuento.getText(),lblTotal.getText());
 
         reporte.reporteModificacionVenta(listaReporte,
                 comboCliente.getSelectionModel().getSelectedItem().getNombre() +
@@ -655,7 +656,7 @@ public class VentasController implements Initializable {
                 comboCliente.getSelectionModel().getSelectedItem().getNit(),
                 comboCliente.getSelectionModel().getSelectedItem().getDireccion(),
                 String.valueOf(comboCliente.getSelectionModel().getSelectedItem().getCelular()),
-                String.valueOf(lblNoOrden.getText()),checkImprimir.isSelected(),checkGuardar.isSelected(),
+                txtEmpleado.getText(),String.valueOf(lblNoOrden.getText()),checkImprimir.isSelected(),checkGuardar.isSelected(),
                 lblSubTotal.getText(),txtDescuento.getText(),lblTotal.getText(),lblNoOrden.getText());
     }
 
