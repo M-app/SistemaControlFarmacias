@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="rootPos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" stylesheets="@pos.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.PosController">
+<GridPane fx:id="rootPos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" stylesheets="@pos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.PosController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="40.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="60.0" prefWidth="100.0" />
@@ -262,11 +262,23 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="comboCliente" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="272.0" HBox.hgrow="ALWAYS">
+                        <TextField fx:id="txtCliente" editable="false" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
                            <HBox.margin>
-                              <Insets right="16.0" />
-                           </HBox.margin></ComboBox>
+                              <Insets right="8.0" />
+                           </HBox.margin>
+                        </TextField>
                         <Button id="btnComprar" fx:id="btnNuevoCliente" mnemonicParsing="false" text="Nuevo">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="8.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button id="btnComprar" fx:id="btnBuscar" layoutX="394.0" layoutY="10.0" mnemonicParsing="false" text="Buscar">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../operaciones/operaciones.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="productos.ProductosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../operaciones/operaciones.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="productos.ProductosController">
    <children>
       <HBox layoutY="6.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="6.0">
          <children>
@@ -78,8 +78,8 @@
             <TableColumn fx:id="colStock" prefWidth="75.0" text="Stock" />
             <TableColumn fx:id="colProveedor" prefWidth="75.0" text="Proveedor" />
             <TableColumn fx:id="colPresentacion" prefWidth="75.0" text="Presentacion" />
-            <TableColumn fx:id="colDolencia" prefWidth="75.0" text="Dolencia" />
-            <TableColumn fx:id="colColocacion" prefWidth="75.0" text="Colocacion" />
+            <TableColumn fx:id="colDolencia" prefWidth="75.0" text="Descripción" />
+            <TableColumn fx:id="colColocacion" prefWidth="75.0" text="Marca" />
         </columns>
       </TableView>
    </children>

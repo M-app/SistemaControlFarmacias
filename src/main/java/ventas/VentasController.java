@@ -503,15 +503,9 @@ public class VentasController implements Initializable {
             e.printStackTrace();
         }
         if(estatus.equals("VENDIDO")) {
-            if (dateFormat.format(fechaVenta).equals(dateFormat.format(hoy))) {
-                btnModificar.setDisable(false);
-                btnAgregar.setDisable(false);
-                btnAnular.setDisable(true);
-            } else {
-                btnAgregar.setDisable(true);
-                btnModificar.setDisable(true);
-                btnAnular.setDisable(false);
-            }
+            btnModificar.setDisable(false);
+            btnAgregar.setDisable(false);
+            btnAnular.setDisable(false);
         }else{
             btnModificar.setDisable(true);
             btnAnular.setDisable(true);

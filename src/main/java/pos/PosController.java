@@ -1,9 +1,15 @@
 package pos;
 
+import clientes.BuscarClienteController;
+import clientes.PasarCodigoCliente;
 import clientes.model.Cliente;
 import clientes.model.ClienteDAO;
+import domain.PasarParametros;
 import empleados.model.Empleado;
 import empleados.model.EmpleadoDAO;
+import javafx.beans.property.*;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
@@ -93,7 +99,7 @@ public class PosController implements Initializable{
     private TextField txtCambio;
 
     @FXML
-    private ComboBox<Cliente> comboCliente;
+    private TextField txtCliente;
 
     @FXML
     private ComboBox<Pago> comboTipoPago;
@@ -119,16 +125,26 @@ public class PosController implements Initializable{
     @FXML
     private Button btnNuevoCliente;
 
+    @FXML
+    private Button btnBuscar;
 
-    private ClienteDAO clienteDAO = new ClienteDAO();
+
+    // private ClienteDAO clienteDAO = new ClienteDAO();
     private EmpleadoDAO empleadoDAO = new EmpleadoDAO();
     private PagoDAO pagoDAO = new PagoDAO();
 
-    private int mUltimoId = 0;
+    public static SimpleStringProperty mStringCliente = new SimpleStringProperty();
+    public static final String getmStringCliente(){return mStringCliente.get();}
+    public static final void setmStringCliente(String value){mStringCliente.set(value);}
+    public static StringProperty mStringClienteProperty() {return mStringCliente;}
+
+    private static SimpleObjectProperty<Cliente> mCliente = new SimpleObjectProperty<>();
+    public static final Object getmCliente(){return mCliente.get();}
+    public static final void setmCliente(Cliente value){mCliente.set(value);}
+    public static ObjectProperty<Cliente> mClienteProperty() {return mCliente;}
 
     private VenderDAO venderDAO = new VenderDAO();
 
-    private ObservableList<Cliente> listaClientes = FXCollections.observableArrayList();
     private ObservableList<Pago> listaPago = FXCollections.observableArrayList();
 
     private PosDAO posDAO = new PosDAO();
@@ -150,7 +166,7 @@ public class PosController implements Initializable{
         showPopUpForItem();
         llenarCombos();
         initLabelsFactura();
-        configCellFactoriesCliente();
+        // configCellFactoriesCliente();
         configCellFactoriesPago();
         configCambio();
         listaCompra.setItems(listaCompras);
@@ -207,6 +223,29 @@ public class PosController implements Initializable{
         btnNuevoCliente.setOnAction((event -> {
             abrirNuevoCliente();
         }));
+
+        btnBuscar.setOnAction((event -> {
+            abrirVentanaBuscarCliente();
+        }));
+        mStringCliente.set("Seleccionar un Cliente");
+        mStringCliente.addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                txtCliente.setText(newValue);
+            }
+        });
+        mCliente.set(null);
+        btnComprar.setDisable(true);
+        mCliente.addListener(new ChangeListener<Cliente>() {
+            @Override
+            public void changed(ObservableValue<? extends Cliente> observable, Cliente oldValue, Cliente newValue) {
+                if (newValue != null){
+                    System.out.println("new: " + newValue.getNombre());
+                    mCliente.set(newValue);
+                    btnComprar.setDisable(false);
+                }
+            }
+        });
     }
 
     private void verReporte(){
@@ -220,11 +259,11 @@ public class PosController implements Initializable{
         }
         Reporte reporte = new Reporte();
         reporte.pdfReporte(listaReporte,
-                comboCliente.getSelectionModel().getSelectedItem().getNombre() +
-                " " + comboCliente.getSelectionModel().getSelectedItem().getApellidos(),
-                comboCliente.getSelectionModel().getSelectedItem().getNit(),
-                comboCliente.getSelectionModel().getSelectedItem().getDireccion(),
-                String.valueOf(comboCliente.getSelectionModel().getSelectedItem().getCelular()),
+                mCliente.get().getNombre() +
+                " " + mCliente.get().getApellidos(),
+                mCliente.get().getNit(),
+                mCliente.get().getDireccion(),
+                String.valueOf(mCliente.get().getCelular()),
                 txtEmpleado.getText(),
                 String.valueOf(lblNoOrden.getText()),checkImprimir.isSelected(),checkGuardar.isSelected(),
                 lblSubTotal.getText(),txtDescuento.getText(),lblTotal.getText());
@@ -279,61 +318,61 @@ public class PosController implements Initializable{
         return false;
     }
 
-    private void configCellFactoriesCliente(){
-        comboCliente.setCellFactory(new Callback<ListView<Cliente>, ListCell<Cliente>>() {
-            @Override
-            public ListCell<Cliente> call(ListView<Cliente> param) {
-                ListCell<Cliente> listCell = new ListCell<Cliente>(){
-                    @Override
-                    protected void updateItem(Cliente item, boolean empty) {
-                        super.updateItem(item, empty);
-                        if(empty){
-                            setText("");
-                        }else {
-                            setText(getStringForCliente(item));
-                        }
-                    }
-                };
-                return listCell;
-            }
-        });
-        comboCliente.setButtonCell(new ListCell<Cliente>(){
-            @Override
-            protected void updateItem(Cliente item, boolean empty) {
-                super.updateItem(item, empty);
-                if(empty){
-                    setText("");
-                }else{
-                    setText(getStringForCliente(item));
-                }
-            }
-        });
-        comboCliente.setConverter(new StringConverter<Cliente>() {
-            private Map<String,Cliente> map = new HashMap<String, Cliente>();
-            @Override
-            public String toString(Cliente object) {
-                if(object != null){
-                    String str = getStringForCliente(object);
-                    map.put(str,object);
-                    return str;
-                }else{
-                    return "";
-                }
-            }
-            @Override
-            public Cliente fromString(String string) {
-                if(!map.containsKey(string)){
-                    comboCliente.setValue(null);
-                    comboCliente.getEditor().clear();
-                    return null;
-                }
-                return map.get(string);
-            }
-        });
-    }
+//    private void configCellFactoriesCliente(){
+//        comboCliente.setCellFactory(new Callback<ListView<Cliente>, ListCell<Cliente>>() {
+//            @Override
+//            public ListCell<Cliente> call(ListView<Cliente> param) {
+//                ListCell<Cliente> listCell = new ListCell<Cliente>(){
+//                    @Override
+//                    protected void updateItem(Cliente item, boolean empty) {
+//                        super.updateItem(item, empty);
+//                        if(empty){
+//                            setText("");
+//                        }else {
+//                            setText(getStringForCliente(item));
+//                        }
+//                    }
+//                };
+//                return listCell;
+//            }
+//        });
+//        comboCliente.setButtonCell(new ListCell<Cliente>(){
+//            @Override
+//            protected void updateItem(Cliente item, boolean empty) {
+//                super.updateItem(item, empty);
+//                if(empty){
+//                    setText("");
+//                }else{
+//                    setText(getStringForCliente(item));
+//                }
+//            }
+//        });
+//        comboCliente.setConverter(new StringConverter<Cliente>() {
+//            private Map<String,Cliente> map = new HashMap<String, Cliente>();
+//            @Override
+//            public String toString(Cliente object) {
+//                if(object != null){
+//                    String str = getStringForCliente(object);
+//                    map.put(str,object);
+//                    return str;
+//                }else{
+//                    return "";
+//                }
+//            }
+//            @Override
+//            public Cliente fromString(String string) {
+//                if(!map.containsKey(string)){
+//                    comboCliente.setValue(null);
+//                    comboCliente.getEditor().clear();
+//                    return null;
+//                }
+//                return map.get(string);
+//            }
+//        });
+//    }
 
     private String getStringForCliente(Cliente cliente){
-        return cliente.getCelular() + "\t" + cliente.getApellidos() + " " + cliente.getNombre();
+        return cliente.getCodigo() + "- " + cliente.getNombre() + " " + cliente.getApellidos();
     }
 
     private void abrirNuevoCliente(){
@@ -354,6 +393,27 @@ public class PosController implements Initializable{
                 llenarCombos();
             }
         });
+        stage.show();
+    }
+
+    private void abrirVentanaBuscarCliente(){
+        tblDatos.setDisable(true);
+        BuscarClienteController mController;
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("clientes/buscar_cliente.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mController = loader.getController();
+        Scene posScene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(posScene);
+        stage.setTitle("Buscar Cliente");
+        stage.setOnHiding((event -> {
+            tblDatos.setDisable(false);
+        }));
         stage.show();
     }
 
@@ -420,7 +480,7 @@ public class PosController implements Initializable{
     private OrdenPedido crearOrden(){
         return new OrdenPedido(
                 Integer.parseInt(lblNoOrden.getText()),
-                comboCliente.getSelectionModel().getSelectedItem().getCodigo(),
+                mCliente.get().getCodigo(),
                 Sesion.getmUsuarioActual().getCodigoEmpleado(),
                 comboTipoPago.getSelectionModel().getSelectedItem().getIdPago());
     }
@@ -571,10 +631,9 @@ public class PosController implements Initializable{
     }
 
     private void llenarCombos(){
-        listaClientes.setAll(clienteDAO.getClientes());
-        comboCliente.setItems(listaClientes);
-        comboCliente.getSelectionModel().select(0);
-
+        // listaClientes.setAll(clienteDAO.getClientes());
+        // comboCliente.setItems(listaClientes);
+        // System.out.println("Llenar Combos");
         listaPago.setAll(pagoDAO.getPagos());
         comboTipoPago.setItems(listaPago);
         comboTipoPago.getSelectionModel().select(0);
@@ -653,5 +712,4 @@ public class PosController implements Initializable{
         colProveedor.setCellValueFactory(new PropertyValueFactory<Pos, String>("proveedor"));
         colPresentacion.setCellValueFactory(new PropertyValueFactory<Pos, String>("presentacion"));
     }
-
 }

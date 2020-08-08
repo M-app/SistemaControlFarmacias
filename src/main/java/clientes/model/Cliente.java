@@ -101,4 +101,9 @@ public class Cliente {
     public void setCelular(int celular) {
         this.celular.set(celular);
     }
+
+    @Override
+    public String toString() {
+        return this.getNombre() + " " + this.getApellidos();
+    }
 }

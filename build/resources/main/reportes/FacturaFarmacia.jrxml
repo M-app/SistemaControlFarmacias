@@ -141,14 +141,14 @@
 				<text><![CDATA[NIT:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="54" y="14" width="100" height="14" uuid="ecdfca47-0e13-4e85-9082-581674bdd0bc"/>
+				<reportElement x="54" y="14" width="277" height="14" uuid="ecdfca47-0e13-4e85-9082-581674bdd0bc"/>
 				<textElement verticalAlignment="Middle">
 					<font size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{direccion}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="54" y="0" width="100" height="14" uuid="fb7ac941-42bd-484a-88bc-db5dbbf7a85c"/>
+				<reportElement x="54" y="0" width="277" height="14" uuid="fb7ac941-42bd-484a-88bc-db5dbbf7a85c"/>
 				<textElement>
 					<font size="11"/>
 				</textElement>
