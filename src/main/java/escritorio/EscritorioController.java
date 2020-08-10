@@ -111,6 +111,9 @@ public class EscritorioController implements Initializable {
     @FXML
     private TreeItem<String> existenciaMinimaItem;
 
+    @FXML
+    private TreeItem<String> ventasPorEmpleadoItem;
+
     PermisosDAO permisosDAO = new PermisosDAO();
 
     ExistenciaMinimaDAO existenciaMinimaDAO = new ExistenciaMinimaDAO();
@@ -188,6 +191,8 @@ public class EscritorioController implements Initializable {
             inventarioItem.getChildren().remove(devolucionesItem);
         } if(!permisosDAO.getLectura(String.valueOf(mNivelUsuario),ConstantesPermisos.EXISTENCIA_MINIMA+"")){
             resumenItem.getChildren().remove(existenciaMinimaItem);
+        } if(!permisosDAO.getLectura(String.valueOf(mNivelUsuario),ConstantesPermisos.VENTAS_POR_EMPLEADO+"")){
+            resumenItem.getChildren().remove(ventasPorEmpleadoItem);
         }
     }
 
@@ -195,7 +200,7 @@ public class EscritorioController implements Initializable {
         treeViewItems.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TreeItem<String>>() {
             @Override
             public void changed(ObservableValue<? extends TreeItem<String>> observable, TreeItem<String> oldValue, TreeItem<String> newValue) {
-                TreeItem<String> selectedItem = newValue;
+                // TreeItem<String> selectedItem = newValue;
                 setCenterFromTreeItem(newValue.getValue());
             }
         });
@@ -339,6 +344,13 @@ public class EscritorioController implements Initializable {
                         "ventas/ventas.fxml",getClass());
                 rootPosVentas.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
                 rootEscritorio.setCenter(rootPosVentas);
+                System.out.println("hola");
+                break;
+            case "Ventas por Empleado":
+                ScrollPane rootVentasPorEmpleado = (ScrollPane) Util.getWindow(
+                        "ventas/ventas_por_empleado.fxml",getClass());
+                rootVentasPorEmpleado.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
+                rootEscritorio.setCenter(rootVentasPorEmpleado);
                 break;
             case "Compras":
                 abrirCompras();
@@ -474,6 +486,8 @@ public class EscritorioController implements Initializable {
                 return getBlackImageFromEscritorio("24_niveles.png");
             case "Permisos":
                 return getBlackImageFromEscritorio("24_permisos.png");
+            case "Ventas por Empleado":
+                return getBlackImageFromEscritorio("24_empleado.png");
             default:
                 return getBlackImageFromEscritorio("24_compania.png");
         }

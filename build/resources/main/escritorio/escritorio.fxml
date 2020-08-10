@@ -36,6 +36,7 @@
                  <TreeItem value="Punto de Venta" fx:id="posItem">
                      <children>
                          <TreeItem value="Ventas" fx:id="ventasItem"></TreeItem>
+                         <TreeItem value="Ventas por Empleado" fx:id="ventasPorEmpleadoItem"></TreeItem>
                      </children>
                  </TreeItem>
 

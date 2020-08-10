@@ -35,7 +35,7 @@ public class ResumenController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        lineChart.setTitle("Stock Monitoring, 2010");
+        lineChart.setTitle("Resumen de Ventas");
         ObservableList<XYChart.Series<Number,Number>> datosChart =
                 FXCollections.observableArrayList(
                         new LineChart.Series("Serie 1",FXCollections.observableArrayList(

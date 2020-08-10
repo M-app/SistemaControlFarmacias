@@ -8,6 +8,7 @@ import org.apache.commons.collections.map.HashedMap;
 import pos.model.ProductoReporte;
 import resumen.ventas.model.VentaDiaReporte;
 import ventas.model.DetalleOPedidoReporte;
+import ventas.model.VentaPorEmpleado;
 
 import java.io.File;
 import java.io.InputStream;
@@ -168,6 +169,32 @@ public class Reporte {
             if(guardar){
                 String path= System.getProperty("user.home");
                 JasperExportManager.exportReportToPdfFile(jPrint,  path + File.separator + "Reportes" +File.separator +"compras"+ File.separator + "ReporteModificacionCompra--" + noCompra +"--" + getFecha() + ".pdf");
+            }
+        } catch (JRException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void reporteProductosPorVendedor(List<VentaPorEmpleado> lista,String nomEmpleado,
+                                            boolean guardar,boolean imprimir){
+        Map<String,Object> par = new HashMap<>();
+        par.put("nomEmpleado",nomEmpleado);
+        InputStream reporte = null;
+        try {
+            reporte = getClass().getResourceAsStream("/reportes/VentasPorEmpleado.jrxml");
+            JasperReport report = JasperCompileManager.compileReport(reporte);
+            JasperPrint jPrint = JasperFillManager.fillReport(report, par,
+                    new JRBeanCollectionDataSource(lista));
+            if(imprimir){
+                JasperPrintManager.printReport(jPrint, false);
+            }
+            JasperViewer jasperViewer = new JasperViewer(jPrint,false);
+            jasperViewer.setTitle("CONSOLIDADO");
+            jasperViewer.setVisible(true);
+            if(guardar){
+                String path= System.getProperty("user.home");
+                JasperExportManager.exportReportToPdfFile(jPrint,  path + File.separator + "Reportes" +File.separator +"consolidados"+ File.separator + "Con--" + nomEmpleado + "--" + getFecha() + ".pdf");
             }
         } catch (JRException e) {
             e.printStackTrace();

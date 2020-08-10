@@ -25,39 +25,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f5873ff-2a9a-471e-8d26-b56bdbab16b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/clientes/BuscarClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/clientes/PasarCodigoCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ventas/VentasPorEmpleadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ventas/model/VentaPorEmpleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/clientes/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/clientes/model/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$7$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/pos/PosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/pos/PosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/ventas/VentasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/ventas/VentasController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pos/pos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pos/pos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/productos/operaciones_productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/productos/operaciones_productos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/reportes/FacturaFarmacia.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/reportes/FacturaFarmacia.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clientes/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clientes/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pos/PosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pos/PosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ventas/VentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ventas/VentasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pos/pos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pos/pos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/productos/operaciones_productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/productos/operaciones_productos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/escritorio/ConstantesPermisos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/escritorio/ConstantesPermisos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/escritorio/EscritorioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/escritorio/EscritorioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reportes/Reporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reportes/Reporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resumen/ventas/ResumenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resumen/ventas/ResumenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/escritorio/escritorio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/escritorio/escritorio.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/reportes/FacturaFarmacia.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reportes/FacturaFarmacia.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resumen/css/resumenVentas.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resumen/css/resumenVentas.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,8 +107,8 @@
       <list>
         <option value="Singleton" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -632,7 +614,8 @@
       <workItem from="1596684607175" duration="10872000" />
       <workItem from="1596856765909" duration="3937000" />
       <workItem from="1596860784449" duration="3092000" />
-      <workItem from="1596866005200" duration="980000" />
+      <workItem from="1596866005200" duration="3340000" />
+      <workItem from="1596913559811" duration="21333000" />
     </task>
     <servers />
   </component>
@@ -675,10 +658,10 @@
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
     <state x="1773" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1594233329021" />
-    <state x="1854" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1596862845130">
-      <screen x="1366" y="0" width="1366" height="738" />
+    <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1596951940604">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596691629252" />
+    <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596951940604" />
     <state x="1854" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596862845130" />
     <state x="412" y="158" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596299132449">
       <screen x="0" y="0" width="1366" height="738" />
@@ -692,30 +675,30 @@
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596299549777" />
     <state x="1829" y="109" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1594990493271" />
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1595044612302" />
-    <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1596863922198">
+    <state width="1323" height="485" key="GridCell.Tab.0.bottom" timestamp="1597036400422">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596859146094" />
-    <state width="1323" height="198" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596863922198" />
-    <state width="1323" height="144" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1596558115481" />
-    <state width="1323" height="198" key="GridCell.Tab.0.center" timestamp="1596863922197">
+    <state width="1323" height="242" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597032529709" />
+    <state width="1323" height="485" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1597036400422" />
+    <state width="1323" height="137" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1597014892053" />
+    <state width="1323" height="485" key="GridCell.Tab.0.center" timestamp="1597036400422">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596859146093" />
-    <state width="1323" height="198" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596863922197" />
-    <state width="1323" height="144" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1596558115480" />
-    <state width="1323" height="198" key="GridCell.Tab.0.left" timestamp="1596863922197">
+    <state width="1323" height="242" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597032529708" />
+    <state width="1323" height="485" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1597036400422" />
+    <state width="1323" height="137" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1597014892051" />
+    <state width="1323" height="485" key="GridCell.Tab.0.left" timestamp="1597036400422">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596859146092" />
-    <state width="1323" height="198" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596863922197" />
-    <state width="1323" height="144" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1596558115480" />
-    <state width="1323" height="198" key="GridCell.Tab.0.right" timestamp="1596863922198">
+    <state width="1323" height="242" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597032529708" />
+    <state width="1323" height="485" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1597036400422" />
+    <state width="1323" height="137" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1597014892051" />
+    <state width="1323" height="485" key="GridCell.Tab.0.right" timestamp="1597036400422">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596859146093" />
-    <state width="1323" height="198" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596863922198" />
-    <state width="1323" height="144" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1596558115481" />
+    <state width="1323" height="242" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1597032529709" />
+    <state width="1323" height="485" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1597036400422" />
+    <state width="1323" height="137" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1597014892052" />
     <state width="1323" height="246" key="GridCell.Tab.1.bottom" timestamp="1596860716857">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
@@ -750,10 +733,11 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="460" y="237" key="classpath-attribute-editor/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596293290135" />
-    <state x="0" y="0" width="587" height="738" key="find.popup" timestamp="1594260106827">
+    <state x="0" y="0" width="587" height="738" key="find.popup" timestamp="1596994744883">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="0" width="587" height="738" key="find.popup/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1594260106827" />
+    <state x="0" y="0" width="587" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1596994744883" />
     <state x="65" y="0" key="new project wizard" timestamp="1596298008114">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -763,6 +747,10 @@
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
     <state x="1705" y="165" key="run.anything.popup/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1596692087801" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1596999718743">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1366.738@0.0.1366.738" timestamp="1596999718743" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

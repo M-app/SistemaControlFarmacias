@@ -25,4 +25,5 @@ public class ConstantesPermisos {
     public static int INGRESO = 19;
     public static int DEVOLUCIONES = 20;
     public static int EXISTENCIA_MINIMA = 21;
+    public static int VENTAS_POR_EMPLEADO = 22;
 }
